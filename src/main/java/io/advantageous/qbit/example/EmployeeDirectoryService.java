@@ -17,7 +17,7 @@ public class EmployeeDirectoryService {
     private final List<Department> departmentList = new ArrayList<>();
 
 
-    @RequestMapping("/employee/{employeeId}/")
+    @RequestMapping("/employee/{0}/")
     public Employee listEmployee(@PathVariable("employeeId") final long employeeId) {
 
         /* Find the department that has the employee. */
@@ -37,7 +37,7 @@ public class EmployeeDirectoryService {
 
 
 
-    @RequestMapping("/department/{departmentId}/")
+    @RequestMapping("/department/{0}/")
     public Department listDepartment(@PathVariable("departmentId") final long departmentId) {
 
         return departmentList.stream()
