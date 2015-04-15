@@ -15,19 +15,22 @@ public class SimpleService {
         return a + b;
     }
 
-    @RequestMapping("/add2/{a}/{b}")
-    public int add2( @PathVariable("a") int a,
-                     @PathVariable("b") int b) {
+    @RequestMapping("/add2/{0}/{1}")
+    public int add2(@PathVariable int a, @PathVariable int b) {
 
         return a + b;
+
     }
 
-    @RequestMapping("/add3/{a}/")
-    public int add3( @PathVariable("a") int a,
-                     @RequestParam("b") int b) {
+//    @RequestMapping("/add3/{0}")
+//    public int add3(@PathVariable int a, @RequestParam("b") int b) {
+//
+//
+//        return a + b;
+//
+//    }
 
-        return a + b;
-    }
+
 
 
 }

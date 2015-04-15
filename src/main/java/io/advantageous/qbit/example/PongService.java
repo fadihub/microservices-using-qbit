@@ -3,11 +3,11 @@ package io.advantageous.qbit.example;
 
 import io.advantageous.qbit.annotation.RequestMapping;
 
-@RequestMapping
+@RequestMapping("/pongservice")
 public class PongService {
 
 
-    @RequestMapping
+    @RequestMapping("/ping")
     public String ping() {
         return "pong";
     }
