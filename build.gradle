@@ -25,16 +25,9 @@ task runTestHelloMain(type: JavaExec, dependsOn: 'classes') {
 
 task runMain(type: JavaExec, dependsOn: 'classes') {
 
-    main = 'io.advantageous.qbit.example.ServiceMain'
+    main = 'io.advantageous.qbit.example.Main'
     classpath = sourceSets.main.runtimeClasspath
 }
-
-task runPingMain(type: JavaExec, dependsOn: 'classes') {
-
-    main = 'io.advantageous.qbit.example.PingMain'
-    classpath = sourceSets.main.runtimeClasspath
-}
-
 
 
 
