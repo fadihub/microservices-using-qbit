@@ -32,7 +32,7 @@ task runMain(type: JavaExec, dependsOn: 'classes') {
 
 
 dependencies {
-    compile group: 'io.advantageous.qbit', name: 'qbit-vertx', version: '0.7.3-SNAPSHOT'
+    compile group: 'io.advantageous.qbit', name: 'qbit-vertx', version: '0.8.6'
 
 
     compile "org.slf4j:slf4j-api:[1.7,1.8)"
